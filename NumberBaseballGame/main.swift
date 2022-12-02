@@ -9,3 +9,12 @@ import Foundation
 
 print("Hello, World!")
 
+let controller = Controller()
+
+while true {
+    if controller.startGame() {
+        OutputView.printGameSuccess()
+        break
+    }
+}
+
